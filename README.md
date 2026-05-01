@@ -1,21 +1,90 @@
-<<<<<<< HEAD
-# React + Vite
+# 🎬 NetflixGPT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Netflix-inspired streaming platform with AI-powered movie search.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+[View Live](your-netlify-link-here)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+- 🔐 User Authentication (Sign Up / Sign In / Sign Out)
+- 🎥 Browse Movies (Now Playing, Popular, Top Rated)
+- 🤖 AI-powered Movie Search using Gemini AI
+- 🎬 Hero Banner with featured movie
+- 📱 Responsive UI
+- 🔄 Session Persistence
 
-## React Compiler
+## 🛠️ Tech Stack
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend Library |
+| Redux Toolkit | State Management |
+| Tailwind CSS | Styling |
+| Firebase Auth | Authentication |
+| TMDB API | Movie Data |
+| Gemini AI | AI Movie Search |
+| Vite | Build Tool |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Project Structure
+src/
+├── components/
+│   ├── Login.jsx
+│   ├── Browse.jsx
+│   ├── HeroBanner.jsx
+│   └── GPTSearch.jsx
+├── hooks/
+│   ├── useNowPlayingMovies.js
+│   ├── usePopularMovies.js
+│   └── useTopRatedMovies.js
+├── store/
+│   ├── appStore.js
+│   ├── userSlice.js
+│   ├── moviesSlice.js
+│   └── gptSlice.js
+└── utils/
+├── firebase.js
+└── constants.js
 
-## Expanding the ESLint configuration
+## ⚙️ Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# NetflixGPT
-A Netflix-inspired streaming platform with AI-powered movie search built with React.js, Redux, Firebase, Tailwind CSS and Gemini AI.
->>>>>>> af5641da4307d0c4b81fe453058d2d0f9caafbc6
+1. Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/netflixgpt.git
+cd netflixgpt
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Create `src/utils/constants.js` and add your API keys:
+```js
+export const TMDB_API_KEY = "your_tmdb_api_key";
+export const GEMINI_API_KEY = "your_gemini_api_key";
+```
+
+4. Create Firebase project and add config to `src/utils/firebase.js`
+
+5. Run the app
+```bash
+npm run dev
+```
+
+## 🔑 Environment Variables Required
+- TMDB API Key → [themoviedb.org](https://www.themoviedb.org)
+- Gemini API Key → [aistudio.google.com](https://aistudio.google.com)
+- Firebase Config → [firebase.google.com](https://firebase.google.com)
+
+## 📸 Screenshots
+![Login Page](screenshots/login.png)
+![Browse Page](screenshots/browse.png)
+![GPT Search](screenshots/gpt-search.png)
+
+## 🙏 Acknowledgements
+- [TMDB](https://www.themoviedb.org) for movie data
+- [Firebase](https://firebase.google.com) for authentication
+- [Google Gemini](https://aistudio.google.com) for AI search
+
+## 📄 License
+MIT License
+
